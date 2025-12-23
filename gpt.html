@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Igraonica Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .section-padding {
+      padding: 80px 0;
+    }
+    .price-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .menu-image {
+      height: 450px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top shadow-sm">
+  <div class="container px-4">
+    <a class="navbar-brand fw-bold fs-4" href="#">Igraonica</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="#calendar">Calendar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#prices">Prices & Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#location">Location</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="height: 70px"></div>
+
+<!-- ================= CAROUSEL ================= -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://picsum.photos/1200/500?1" class="d-block w-100" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://picsum.photos/1200/500?2" class="d-block w-100" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://picsum.photos/1200/500?3" class="d-block w-100" alt="">
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- ================= PRICES ================= -->
+<section id="prices" class="section-padding">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Prices</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card price-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/300?4" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Basic Package</h5>
+            <p class="card-text">2 hours play time + drinks</p>
+            <p class="fw-bold">$50</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card price-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/300?5" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Birthday Party</h5>
+            <p class="card-text">3 hours + snacks + animator</p>
+            <p class="fw-bold">$120</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card price-card h-100 shadow-sm">
+          <img src="https://picsum.photos/400/300?6" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">VIP Package</h5>
+            <p class="card-text">Full day access + food</p>
+            <p class="fw-bold">$200</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU IMAGE ================= -->
+<section class="section-padding bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Our Menu</h2>
+    <img src="https://picsum.photos/1200/500?7" class="img-fluid rounded shadow menu-image">
+  </div>
+</section>
+
+<!-- ================= CALENDAR ================= -->
+<section id="calendar" class="section-padding">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Booking Calendar</h2>
+
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com"
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP ================= -->
+<section id="location" class="section-padding bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Our Location</h2>
+
+    <div class="ratio ratio-16x9">
+      <iframe 
+        src="https://www.google.com/maps?q=Almaty&output=embed"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-4 bg-dark text-white text-center">
+  © 2025 Igraonica
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
